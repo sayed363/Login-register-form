@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page title here</title>
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- fevicon icon -->
+  <link rel="shortcut icon" href="img/fevicon.png" type="image/x-icon">
+  <!-- all css here -->
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400|Roboto:100,100i,300,500,500i,700&display=swap" rel="stylesheet">
+  
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+	<div class="main">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn" onclick="btn()"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			
+			<!-- for login form-->
+			<div class="input-group"id="login">
+				<input type="text" class="input-field" placeholder="Enter name" required>
+				<input type="text" class="input-field" placeholder="Enter password" required>
+				<input type="checkbox" class="check-box"><span>Remember password.</span> <br>
+				<span>Lost your password? <a href="#">Click here</a></span>
+				<button type="submit" class="submit-btn">Log in</button>
+			</div>
+
+			<!-- for registration form-->
+			<div class="input-group" id="register">
+				<input type="text" class="input-field" placeholder="Enter name" required>
+				<input type="email" class="input-field" placeholder="Enter your email" required>
+				<input type="text" class="input-field" placeholder="Enter password" required>
+				<input type="checkbox" class="check-box"><span>I aggreed to the terms & conditions.</span>
+				<button type="submit" class="submit-btn">Register</button>
+			</div>
+			
+			<!-- social button-->
+			<div class="social-btn">
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>			
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>			
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+		function register()
+		{
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login()
+		{
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+		}
+	</script>
+	
+	
+	
+ <!-- all js here -->
+	<script src="js/all.js"></script>
+	<script src="js/modernizr-3.7.1.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
